@@ -28,10 +28,10 @@ ${TAX_RATE}    0.08  # อัตราภาษี 8%
 
 ### Get Item ###
 ### เก็บชื่อไว้ไปเช็ค ### 
-${ITEMS1}    Sauce Labs Backpack
-${ITEMS2}    Sauce Labs Bike Light
-${ITEMS3}    Sauce Labs Bolt T-Shirt
-${ITEMS4}    Test.allTheThings() T-Shirt (Red)
+${ITEM_1}    Sauce Labs Backpack
+${ITEM_2}    Sauce Labs Bike Light
+${ITEM_3}    Sauce Labs Bolt T-Shirt
+${ITEM_4}    Test.allTheThings() T-Shirt (Red)
 ${Item1name}    xpath=//div[@data-test="inventory-item-name" and text()="Sauce Labs Bike Light"]
 ${Item1price}    xpath=//div[@data-test="inventory-item-name" and text()="Sauce Labs Bike Light"]/ancestor::div[@data-test="inventory-item"]/descendant::div[@data-test="inventory-item-price"]
 ${Item2name}    xpath=//div[@data-test="inventory-item-name" and text()="Sauce Labs Bolt T-Shirt"]
