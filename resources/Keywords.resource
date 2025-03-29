@@ -31,5 +31,4 @@ Search And Add To Cart
     [Arguments]    ${item}
     Wait Until Page Contains Element    xpath=//div[contains(@class, 'inventory_item_name') and contains(text(), '${item}')]    5s
     Click Element    xpath=//div[contains(text(), '${item}')]/ancestor::div[contains(@class, 'inventory_item_description')]//button[contains(text(), 'Add to cart')]
-    Log    '${item} added to cart'    level=INFO
-
+    #Log    '${item} added to cart'    level=INFO

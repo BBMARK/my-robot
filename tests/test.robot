@@ -5,7 +5,7 @@ Library    Collections
 Library    BuiltIn
 Library    JSONLibrary
 
-Suite Teardown    Close Browser
+Test Teardown    Close All Browsers
 
 Resource    ..//resources/Keywords.resource
 
@@ -16,12 +16,12 @@ Test Login User 1 From JSON standard_user
     ${user}=    Get From Dictionary    ${data}    users    {}
     ${first_user}=    Get From Dictionary    ${user[0]}    username    "default"  # ใช้คีย์ "username" จากตัวแปรแรกใน users
     ${password}=    Get From Dictionary    ${user[0]}    password    "default"  # ใช้คีย์ "password" จากตัวแปรแรกใน users
-    Log    ${first_user}  # ดูข้อมูล username
-    Log    ${password}    # ดูข้อมูล password
+    #Log    ${first_user}  # ดูข้อมูล username
+    #Log    ${password}    # ดูข้อมูล password
     Open Web Swag Labs
     Input Text    ${USERNAME_XPATH}    ${first_user}
     Input Text    ${PASSWORD_XPATH}    ${password}
-    Sleep    1s
+    
     Click Button    ${LOGIN_BUTTON_XPATH}
 
     Search And Add To Cart    ${ITEM_1}
